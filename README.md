@@ -1,4 +1,4 @@
-# Trackify -- Smart Parcel Tracking & Delivery Management System
+# Trackify - Smart Parcel Tracking & Delivery Management System
 
 Trackify is a modern, role-based delivery management platform built with
 **Python (Flask)**.\
@@ -84,6 +84,7 @@ update them, and admins to manage the entire ecosystem.
     │   ├── /services
     │   ├── /templates
     │   ├── /static
+    |   ├── /components
     │
     └── /migrations
 
