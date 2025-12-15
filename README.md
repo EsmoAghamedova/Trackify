@@ -1,148 +1,107 @@
-# Trackify -- Smart Parcel Tracking & Delivery Management System
+# 📦 Trackify — Smart Parcel Tracking & Delivery Management System
 
-Trackify is a modern, role-based delivery management platform built with
-**Python (Flask)**.\
-It provides a seamless experience for customers, delivery companies, and
-administrators --- all in one clean system.
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Flask](https://img.shields.io/badge/Flask-Framework-black)
+![License](https://img.shields.io/badge/License-Educational-green)
 
-Trackify allows users to create shipments, companies to process and
-update them, and admins to manage the entire ecosystem.
+**Trackify** is a role-based parcel tracking and delivery management system developed as a **final project** for  
+**TBC IT Academy (TechSchool) × GeoLab** — Web Development (Back End: Python).
 
-------------------------------------------------------------------------
+It demonstrates practical usage of **Flask**, **databases**, authentication, and **role-based access control** in a real-world logistics scenario.
+
+---
+
+## 🎯 Project Goal
+
+Parcel delivery systems often lack transparency and structured communication.  
+Trackify provides a centralized platform where:
+- Clients can create and track shipments
+- Companies can process deliveries
+- Admins can manage the entire system
+
+---
+
+## 👥 Target Audience
+- Individual users sending parcels
+- Delivery companies
+- Platform administrators
+
+---
+
+## 💡 Key Insight
+- Role-based access (Client / Company / Admin)
+- Shipment-specific and general chat
+- Shipment timeline history
+- Saved addresses and mock payment system
+- Clean backend architecture
+
+---
 
 ## 🚀 Features
 
-### 👤 Public (no account needed)
+### 🌐 Public
+- Homepage, About, Pricing, FAQ, Contact
+- Public shipment tracking
 
--   Homepage\
--   About page\
--   Pricing page\
--   FAQ\
--   Contact\
--   Public tracking page (track by Tracking ID)
-
-### 🧑‍💻 User (Client)
-
--   Create shipment requests\
--   View all shipments\
--   View shipment details\
--   Real-time shipment timeline\
--   Automatic price calculation\
--   Track shipments via tracking ID
+### 👤 Client
+- Create shipments
+- Track and chat per shipment
+- Saved addresses
+- Mock payment methods
 
 ### 🏢 Company
-
--   View pending shipment requests\
--   Accept / Reject shipments\
--   Update shipment status\
--   Edit company profile & pricing
+- Accept/reject shipments
+- Update delivery status
+- Chat with clients
 
 ### 🛠️ Admin
+- Full system management
+- View statistics and chats
 
--   Manage all users\
--   Manage all companies\
--   Manage all shipments\
--   System statistics dashboard
-
-------------------------------------------------------------------------
+---
 
 ## 🧱 Tech Stack
+- Flask, SQLAlchemy, Flask-Migrate
+- HTML, Bootstrap, Jinja2
+- SQLite / PostgreSQL
 
--   **Backend:** Flask, SQLAlchemy, Flask-Migrate\
--   **Frontend:** HTML, CSS (Bootstrap), Jinja2\
--   **Database:** SQLite / PostgreSQL\
--   **Other:** WTForms, Bcrypt
+---
 
-------------------------------------------------------------------------
+## 🧭 System Roles Diagram
 
-## 🗂️ Project Structure
+```
+Admin
+ │
+ ├── manages ──► Users
+ │
+ ├── manages ──► Companies
+ │
+ └── monitors ─► Shipments & Chats
 
-    project/
-    │
-    ├── app.py
-    ├── config.py
-    ├── requirements.txt
-    ├── README.md
-    │
-    ├── /instance
-    │     └── database.sqlite
-    │
-    ├── /app
-    │   ├── __init__.py
-    │   ├── extensions.py
-    │   ├── decorators.py
-    │   │
-    │   ├── /models
-    │   ├── /forms
-    │   ├── /routes
-    │   │     ├── public.py
-    │   │     ├── auth.py
-    │   │     ├── user.py
-    │   │     ├── company.py
-    │   │     ├── admin.py
-    │   │
-    │   ├── /services
-    │   ├── /templates
-    │   ├── /static
-    │
-    └── /migrations
+Client ◄──────────► Company
+        Shipments & Chat
+```
 
-------------------------------------------------------------------------
+---
 
 ## 🛠️ Installation
 
-``` bash
-git clone https://github.com/yourusername/trackify.git
+```bash
+git clone https://github.com/EsmoAghamedova/Trackify
 cd trackify
-```
-
-Create a virtual environment:
-
-``` bash
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate    # Windows
-```
-
-Install dependencies:
-
-``` bash
+source venv/bin/activate
 pip install -r requirements.txt
-```
-
-Set up the database:
-
-``` bash
-flask db init
 flask db migrate
 flask db upgrade
-```
-
-Run the server:
-
-``` bash
 flask run
 ```
 
-------------------------------------------------------------------------
+---
 
-## 🔧 Environment Variables
+## 📝 Academic Note
+Developed for **GeoLab / TechSchool** educational purposes.
 
-Create a `.env` file:
+---
 
-    SECRET_KEY=your-secret-key
-    DATABASE_URL=sqlite:///instance/database.sqlite
-
-------------------------------------------------------------------------
-
-## 🧩 Future Improvements
-
--   Real-time tracking\
--   Email notifications\
--   Multi-company support\
--   User--company chat\
--   Full API version
-
-------------------------------------------------------------------------
-
-Project Will Be Done Soon... :)
+🚀 Trackify — Smart logistics, simplified.
