@@ -1,82 +1,83 @@
-alembic                1.14.0
-aniso8601              9.0.1
-asgiref                3.8.1
-attrs                  24.3.0
-bcrypt                 4.2.1
-beautifulsoup4         4.12.3
-black                  25.9.0
-blinker                1.9.0
-cachelib               0.9.0
-captcha                0.6.0
-certifi                2024.12.14
-cffi                   1.17.1
-charset-normalizer     3.4.0
-click                  8.1.7
-colorama               0.4.6
-decouple               0.0.7
-Django                 5.1.3
-dnspython              2.7.0
-email_validator        2.2.0
-Faker                  33.1.0
-Flask                  3.1.0
-Flask-Bcrypt           1.0.1
-Flask-Caching          2.3.0
-Flask-Flash            1.6.8
-Flask-HTTPAuth         4.8.0
-Flask-Login            0.6.3
-flask-marshmallow      1.2.1
-Flask-Migrate          4.0.7
-Flask-RESTful          0.3.10
-Flask-Script           2.0.6
-Flask-SQLAlchemy       3.0.5
-Flask-WTF              1.1.1
-gunicorn               23.0.0
-h11                    0.14.0
-idna                   3.10
-inflect                7.4.0
-inquirerpy             0.3.4
-itsdangerous           2.2.0
-Jinja2                 3.1.4
-Mako                   1.3.8
-MarkupSafe             3.0.2
-marshmallow            3.23.2
-marshmallow-sqlalchemy 1.1.0
-more-itertools         10.5.0
-mypy_extensions        1.1.0
-numpy                  2.2.1
-outcome                1.3.0.post0
-packaging              24.2
-pathspec               0.12.1
-pfzy                   0.3.4
-pillow                 11.0.0
-pip                    25.3
-platformdirs           4.5.0
-prompt_toolkit         3.0.52
-pycparser              2.22
-PySocks                1.7.1
-python-dateutil        2.9.0.post0
-pytokens               0.3.0
-pytz                   2024.2
-PyYAML                 6.0.2
-readchar               4.2.1
-requests               2.32.3
-selenium               4.27.1
-setuptools             75.6.0
-six                    1.17.0
-sniffio                1.3.1
-sortedcontainers       2.4.0
-soupsieve              2.6
-SQLAlchemy             2.0.36
-sqlparse               0.5.2
-trio                   0.28.0
-trio-websocket         0.11.1
-typeguard              4.4.1
-typing_extensions      4.12.2
-tzdata                 2024.2
-urllib3                2.3.0
-wcwidth                0.2.14
-websocket-client       1.8.0
-Werkzeug               3.1.3
-wheel                  0.45.1
-wsproto                1.2.0
-WTForms                3.2.1
+alembic
+aniso8601
+asgiref
+attrs
+bcrypt==4.2.1
+beautifulsoup4==4.12.3
+black==25.9.0
+blinker==1.9.0
+cachelib==0.9.0
+captcha==0.6.0
+certifi==2024.12.14
+cffi==1.17.1
+charset-normalizer==3.4.0
+click==8.1.7
+colorama==0.4.6
+decouple==0.0.7
+django==5.1.3
+dnspython==2.7.0
+email-validator==2.2.0
+faker==33.1.0
+flask==3.1.0
+flask-bcrypt==1.0.1
+flask-caching==2.3.0
+flask-flash==1.6.8
+flask-httpauth==4.8.0
+flask-login==0.6.3
+flask-marshmallow==1.2.1
+flask-migrate==4.0.7
+flask-restful==0.3.10
+flask-script==2.0.6
+flask-sqlalchemy==3.0.5
+flask-wtf==1.1.1
+gunicorn==23.0.0
+h11==0.14.0
+idna==3.10
+inflect==7.4.0
+inquirerpy==0.3.4
+itsdangerous==2.2.0
+jinja2==3.1.4
+mako==1.3.8
+markupsafe==3.0.2
+marshmallow==3.23.2
+marshmallow-sqlalchemy==1.1.0
+more-itertools==10.5.0
+mypy-extensions==1.1.0
+numpy==2.2.1
+outcome==1.3.0.post0
+packaging==24.2
+pathspec==0.12.1
+pfzy==0.3.4
+pillow==11.0.0
+pip==25.3
+platformdirs==4.5.0
+prompt-toolkit==3.0.52
+pycparser==2.22
+pysocks==1.7.1
+python-dateutil==2.9.0.post0
+pytokens==0.3.0
+pytz==2024.2
+pyyaml==6.0.2
+readchar==4.2.1
+requests==2.32.3
+selenium==4.27.1
+setuptools==75.6.0
+six==1.17.0
+sniffio==1.3.1
+sortedcontainers==2.4.0
+soupsieve==2.6
+sqlalchemy==2.0.36
+sqlparse==0.5.2
+trio==0.28.0
+trio-websocket==0.11.1
+typeguard==4.4.1
+typing-extensions==4.12.2
+tzdata==2024.2
+urllib3==2.3.0
+wcwidth==0.2.14
+websocket-client==1.8.0
+werkzeug==3.1.3
+wheel==0.45.1
+wsproto==1.2.0
+wtforms==3.2.1
+wtforms-email==5.0.1
