@@ -6,6 +6,7 @@ from app.routes.company import company_bp
 from app.routes.public import public_bp
 
 app = Flask(__name__, template_folder="app/templates", static_folder="app/static")
+app.secret_key = "01091997"
 
 app.register_blueprint(user_bp)
 app.register_blueprint(admin_bp)
